@@ -3,16 +3,17 @@ comission_proposal:
     Study the 2024 French budget. 
     Try to find where cut in expenses can be made to match
     a total save of 60 billion euros in comparison with 2024 budget.
-    The ministries to study are: Finance, Interior, Justice, Education, Health, Defense, Culture, Sports, Ecological Transition, Labour
+    The spending per mission can be found as a table on this webpage https://www.budget.gouv.fr/budget-etat/mission
   expected_output: >
-    Two 2025 budgets proposals. 
+    Two 2025 budgets proposals for the 5 bigger budgets of France.
     The first proposal will left-wing. The second proposal will be right_wing.
-    Each proposal is a table with a row for each ministry of France with the following columns:
-    - proposal 2025 budget and 2024 budget for this ministry in euros
-    - the difference in percentage with 2024 budget
+    Each proposal is a table with a row for each mission with the following columns:
+    - proposal 2025 budget in billion euros
+    - 2024 budget in billion euros
+    - the difference in billion euros between 2025 proposal budget and 2024 budget and the percentage of change that it represents
     - a sentence to explain this proposal
     Add a row for total spending cuts at the end of this table.
-    Each proposal also containes a second table to detail the changes in tax income for the upper class, middle class and business tax. Detail the choices in a paragraph.
+    Each proposal also contains a paragraph to detail the changes in tax income for the upper class, middle class and business tax.
     Formatted as markdown
   agent: finance_commission_president
 
@@ -22,7 +23,7 @@ decide_and_report_task:
     Choose the budget proposal that matches the best the needs of France for 2025.
   expected_output: >
     A report containing the selected budget and the reason why chose this budget and rejected the second budget.
-    The report must also contain one sentence for each ministry to detail why you chose this budget over the other.
+    The report must also contain one sentence for each mission to detail why you chose this budget over the other.
     Formatted as markdown
   agent: prime_minister
 
