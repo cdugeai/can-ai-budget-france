@@ -5,14 +5,15 @@ comission_proposal:
     a total save of 60 billion euros in comparison with 2024 budget.
     The spending per mission can be found as a table on this webpage https://www.budget.gouv.fr/budget-etat/mission
   expected_output: >
-    Two 2025 budgets proposals for the 5 bigger budgets of France.
+    Two 2025 budgets proposals for the 10 bigger budgets of France.
     The first proposal will left-wing. The second proposal will be right_wing.
     Each proposal is a table with a row for each mission with the following columns:
-    - proposal 2025 budget in billion euros
     - 2024 budget in billion euros
+    - proposal 2025 budget in billion euros
     - the difference in billion euros between 2025 proposal budget and 2024 budget and the percentage of change that it represents
-    - a sentence to explain this proposal
-    Add a row for total spending cuts at the end of this table.
+    - a sentence to explain this spending cut
+    The table should be sorted by spending cuts, with the bigger spending cuts coming first.
+    After the table, show the total spending cuts.
     Each proposal also contains a paragraph to detail the changes in tax income for the upper class, middle class and business tax.
     Formatted as markdown
   agent: finance_commission_president
