@@ -4,15 +4,19 @@ Ask LLM to come up with a 2025 budget for France.
 
 ## Results
 
-Results can be found in the [this folder](budget/output). The results are broken down in two files:
-- `comission_proposals.md`: two detailed proposals for 2025 budget from the AI agent representing the [Comission des finances](https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances). Cost reduction are **broken down by ministries in a table**, a **focus on taxes** per socio-professional class is detailed in a paragraph.
-- `prime_minister_decision.md`: the adopted proposal by the French Prime Minister between these two proposals of the comission. Detailed reasons of the choice can be found here
+The Crew task provides two result files:
+- [comission_proposals.md](budget/output/20250126-175952_comission_proposals.md): two detailed proposals for 2025 budget from the AI agent representing the [Comission des finances](https://www.assemblee-nationale.fr/dyn/17/organes/commissions-permanentes/finances). Cost reduction are **broken down by missions in a table**, a **focus on taxes** per socio-professional class is also detailed in a paragraph.
+- [prime_minister_decision.md](budget/output/20250126-175952_prime_minister_decision.md): the proposal adopted by the French Prime Minister between these two proposals of the comission. Detailed reasons of the choice can be found here.
+
+> [!NOTE]
+> The AI has been asked to based the reflexions on the current budget of 2024 that are available at [this URL]([budget/output/20250126-175952_prime_minister_decision.md](https://www.budget.gouv.fr/budget-etat/mission)).
+
 
 ## But why is it hard for France to find such a budget ?
 
 Let's ask AI:
 
-`ollama run llama3.2 "Why is it hard for France to come up with a budget for 2025 ? Answer in two sentences"`
+🤖 `ollama run llama3.2 "Why is it hard for France to come up with a budget for 2025 ? Answer in two sentences"`
 
 > [!TIP]
 > The French government's inability to present a comprehensive budget for 2025 can be attributed to the ongoing debates over pension reform, unemployment benefits, and economic growth strategies that have hindered consensus among parties.
@@ -21,7 +25,7 @@ Let's ask AI:
 
 Here is an extended answer
 
-`ollama run llama3.2 "Why is it hard for France to come up with a budget for 2025 ?"`
+🤖 `ollama run llama3.2 "Why is it hard for France to come up with a budget for 2025 ?"`
 
 
 > [!TIP]
@@ -45,3 +49,7 @@ cd budget
 # Start the crew work
 make run
 ```
+
+## Intermediate results
+
+Other intermediate results can be found in the [this folder](budget/output).
